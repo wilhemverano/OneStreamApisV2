@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BudgetApi", "..\..\OneStreamApis\BudgetApi\BudgetApi.csproj", "{B41428F8-BD69-4325-9D41-627390245BEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BudgetApi", "BudgetApi\BudgetApi.csproj", "{B41428F8-BD69-4325-9D41-627390245BEC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CPMFrontendApi", "..\..\OneStreamApis\CPMFrontendApi\CPMFrontendApi.csproj", "{B746122D-F3BB-49D8-A9CE-9D8948C7DC73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CPMFrontendApi", "CPMFrontendApi\CPMFrontendApi.csproj", "{B746122D-F3BB-49D8-A9CE-9D8948C7DC73}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReportingApi", "..\..\OneStreamApis\ReportingApi\ReportingApi.csproj", "{28055400-1191-4FAD-8496-73D5172DD95F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReportingApi", "ReportingApi\ReportingApi.csproj", "{28055400-1191-4FAD-8496-73D5172DD95F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedModels", "..\..\OneStreamApis\SharedModels\SharedModels.csproj", "{D02E4E84-D895-4D7B-95B4-F660DE268D02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedModels", "SharedModels\SharedModels.csproj", "{D02E4E84-D895-4D7B-95B4-F660DE268D02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
