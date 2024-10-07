@@ -1,0 +1,87 @@
+1-
+class Animal
+
+{
+
+public virtual string speak(int x) { return "silence"; }
+
+}
+
+class Cat : Animal
+
+{
+
+public string speak(int x) { return "meow"; }
+
+}
+
+class Dog : Animal
+
+{
+
+public string speak(short x) { return "bow-wow"; }
+
+}
+
+Question: Explain why the block below does not emit “bow-wow”:
+
+Animal d = new Dog();
+
+Console.Write(d.speak(0));
+
+// answer:
+
+This happens because the method speak(int x) in the Dog class it is not overriding the speak(int x) method from the Animal class. The method in the Dog class is a new method that takes a short parameter.
+
+// detailed explanation:
+The class Animal has a virtual speak(int x) method, which can be overridden by any derived classes.
+
+Then the class Dog contains another method speak(short x) which is not overwritting Animal's speak(int x) because their signatures are different and also missing the overwrite 
+
+Then when doing this-> Animal d = new Dog(); and call d.speak(0);, the compiler looks for the speak(int x) method in the Dog class, doesn't find an override, so it uses the Animal's speak(int x) method, which then returns "silence".
+
+2-
+Given the following:
+
+class A
+
+{
+
+public int a { get; set; }
+
+public int b { get; set; }
+
+}
+
+class B
+
+{
+
+public const A a;
+
+public B() { a.a = 10; }
+
+}
+
+int main()
+
+{
+
+B b = new B();
+
+Console.WriteLine("%d %d\n", b.a.a, b.a.b);
+
+return 0;
+
+}
+
+Question: Outline any issues/concerns with the implemented code.
+
+// answer:
+In the class B, the const keyword needs to be initialized when it is declared. You cannot have a const field of a class type like A because only a compiled time constants can be used when declaring a const.
+
+a is never initialized. If you access a.a = 10 in the constructor is going to throw an exception.
+
+
+This is incorrect string interpolation Console.WriteLine("%d %d\n", b.a.a, b.a.b); , it should be like this instead:
+Console.WriteLine("{0} {1}", b.a.a, b.a.b);
